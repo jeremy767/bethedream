@@ -752,10 +752,10 @@ const PATHS = [
   { id: "funder", label: "Funder", intro: "The proof we can stand behind today, and the honest edges.",
     links: [
       { href: "#/brief/funder", t: "Read the brief for funders", d: "Why now, what it has achieved, and what an investment supports." },
-      { href: "#/?section=results", t: "Year 1 results", d: "Regents, AP Seminar, and college credits earned." },
+      { href: "#/results", t: "Year 1 results", d: "Regents, AP Seminar, and college credits earned." },
       { href: "#/watch/year1-film", t: "Watch: Year 1 in Full", d: "" },
       { href: "#/lessons?role=funder", t: "Lessons for funders", d: "" },
-      { href: "#/lessons?section=still-learning", t: "What we are still learning", d: "" },
+      { href: "#/lessons/still-learning", t: "What we are still learning", d: "" },
       { href: "#/dream/conversation", t: "Start the conversation", d: "" }
     ] },
   { id: "caregiver", label: "Caregiver", intro: "Hear what scholars say about this school in their own words, and see what they built.",
@@ -1294,7 +1294,7 @@ const BRIEFS = [
       { q: "What would my university commit?", a: "A formal partnership agreement with explicit roles, credit transfer, decision authority, and escalation paths. College courses planned in partnership with your faculty, with weekly planning between high school teachers and professors. And visible leadership from your institution, not just a name on an MOU. [Add the typical faculty and staffing commitment.]",
         links: [["Establish the university partnership", "#/playbook/early-college/partnership"], ["Build the partnership into structures, not people", "#/lessons/structures-not-people"], ["Say what each institution can and cannot do", "#/lessons/can-and-cannot"]] },
       { q: "What do my institution and future students gain?", a: "Scholars begin HBCU life at 14, not 18. At HBCU ECP, 96% of scholars earned 12 college credits through Delaware State University in Year 1, every scholar is on track for an associate\u2019s degree, and graduates receive automatic admission to DSU. More than 1,000 families applied for 100 seats.",
-        links: [["Year 1 results", "#/?section=results"], ["Voices of the Village", "#/voices"]] },
+        links: [["Year 1 results", "#/results"], ["Voices of the Village", "#/voices"]] },
       { q: "What does the partnership look like for scholars?", a: "Scholars and families are inducted on the university\u2019s campus. University students tutor and mentor scholars twice a week. The university\u2019s president visits classrooms. College courses are held to college standards, and scholars feel it.",
         links: [["Campus visits", "#/playbook/hbcu-legacy/campus-visits"], ["College, now", "#/voices"]] },
       { q: "What was hard?", a: "Mismatched learning platforms, district restrictions on university tools, and late materials cost scholars real time in Year 1. The design journey now addresses each one before a school opens.",
@@ -1306,7 +1306,7 @@ const BRIEFS = [
       { q: "Who is this school for?", a: "Every enrolled scholar is in the college program. No one is cherry-picked. Scholars with disabilities and scholars with very different readiness learn in the same college-level classes, supported by small-group pre-teaching, learning specialists, after-school help, and university tutors.",
         links: [["Scaffold for access without lowering rigor", "#/lessons/scaffold-for-access"], ["Meet scholars where they are", "#/lessons/meet-scholars-where-they-are"]] },
       { q: "Does real-world learning cost traditional results?", a: "Year 1 says no. Ninth graders passed Regents exams at 92% in Algebra 1 and 95% in ELA, 57% scored a 3 or higher on AP Seminar, and every early college course had a 100% pass rate.",
-        links: [["Year 1 results", "#/?section=results"], ["The DEEDS model", "#/playbook/real-world-learning/deeds"]] },
+        links: [["Year 1 results", "#/results"], ["The DEEDS model", "#/playbook/real-world-learning/deeds"]] },
       { q: "What does it take to run?", a: "Platforms and tools aligned between the district and university before the year starts. A schedule built around the full load a young scholar carries. Onboarding for adults planned as carefully as for scholars. [Add the staffing model, schedule, and budget overview.]",
         links: [["Fix the plumbing early", "#/lessons/fix-the-plumbing"], ["Plan for the load on 14-year-olds", "#/lessons/load-on-14-year-olds"], ["Codify adult learning", "#/lessons/codify-adult-learning"]] },
       { q: "How long does it take to open?", a: "A full design journey runs close to three years from commitment to opening, including the charter application and a full year zero to hire, onboard, and build before scholars arrive.",
@@ -1319,11 +1319,11 @@ const BRIEFS = [
       { q: "Why this, and why now?", a: "HBCUs are the country\u2019s strongest pipeline for Black professionals: according to the HBCU ECP case study, 80% of Black judges, 70% of Black doctors, and 50% of Black teachers. New York\u2019s diploma is shifting toward capstones, internships, and real work after August 2027. HBCU ECP puts scholars on that path at 14, with college credit and work-based learning from Year 1. [Confirm statistics and sources before launch.]",
         links: [["The model", "#/playbook"]] },
       { q: "What has it achieved?", a: "In its founding year: a 100% pass rate across early college courses, 96% of scholars earning 12 college credits, Regents pass rates of 92% and 95%, 14th nationally in the JA Stock Market Challenge, and more than 1,000 applications for 100 seats. The school was named 2026 School of the Year at Teacher Fest and showcased at the ASU+GSV Summit.",
-        links: [["Year 1 results", "#/?section=results"], ["Voices of the Village", "#/voices"]] },
+        links: [["Year 1 results", "#/results"], ["Voices of the Village", "#/voices"]] },
       { q: "What would an investment support?", a: "Each chapter of the cohort design journey: the community listening sessions and inspiration visits, the summer academies for future founding classes, the storytelling that powers a charter application, year zero hiring, onboarding, and module building, and Year 1 coaching and codification. We plan from year zero through year four, so the full cost is understood up front. [Add investment by stage from the funder brief.]",
         links: [["See the design journey", "#/dream/journey"]] },
       { q: "How will we know it is working?", a: "Design journey milestones (partners commit, charter submitted by February 1, 2028, approval by July 2028, doors open in fall 2029), then the measures the model tracks every year: MAP Growth, college credits earned, performance-based assessments, community action projects, and work-based learning hours.",
-        links: [["Reflect at the midpoint", "#/lessons/midpoint-reflection"], ["What we are still learning", "#/lessons?section=still-learning"]] } ],
+        links: [["Reflect at the midpoint", "#/lessons/midpoint-reflection"], ["What we are still learning", "#/lessons/still-learning"]] } ],
     next: [["Start the conversation", "#/dream/conversation"], ["See the design journey", "#/dream/journey"]] }
 ];
 
@@ -2393,6 +2393,168 @@ form.bf-page h2{margin:0}
 .dh-back{margin:12px 0 0}
 .notsure{margin-top:16px;font-weight:700}
 .album.playing .arm{transform:rotate(-13deg)}
+/* ---------- Less scroll pass ---------- */
+.subnav{background:var(--wash);border-bottom:1px solid var(--line)}
+.sn-row{display:flex;gap:4px;overflow-x:auto;scrollbar-width:thin}
+.subnav a{flex:0 0 auto;padding:12px 14px;font-weight:700;font-size:.92rem;text-decoration:none;color:var(--navy);border-bottom:4px solid transparent;min-height:44px;display:inline-flex;align-items:center;white-space:nowrap}
+.subnav a:hover{border-bottom-color:var(--keppel)}
+.subnav a[aria-current="page"]{border-bottom-color:var(--scarlet);color:var(--ink)}
+/* Voices: player beside the record */
+.vinyl-hero .page-head{padding-top:16px;padding-bottom:20px}
+.vhead{margin-bottom:12px}
+.vhead h1.d{font-size:clamp(2.2rem,4.4vw,3.2rem)}
+.spread{grid-template-columns:330px minmax(0,1fr);gap:0 28px;max-width:none;align-items:start;padding-left:14px}
+.spread .album{width:330px;height:330px;margin-top:14px}
+.player{background:var(--sky);padding:12px;max-width:680px;position:relative;z-index:2}
+.player .ruled{padding:0}
+.tracks-2{display:grid!important;grid-template-columns:1fr 1fr;border:0}
+.tracks-2 li{border-bottom:1px solid rgba(255,255,255,.6)!important}
+.tracks-2 li:nth-child(odd){border-right:1px solid rgba(255,255,255,.6)}
+.player .track{font-family:var(--sans);color:#fff;font-weight:700;display:flex;align-items:center;gap:10px;padding:6px 12px;min-height:44px;width:100%;background:none;border:0;cursor:pointer;text-align:left}
+.player .track .tno{font-family:var(--display);font-size:1.3rem;color:var(--sky);min-width:18px}
+.player .track .tt{font-size:1.02rem}
+.player .track:hover{background:rgba(255,255,255,.1)}
+.player .track[aria-pressed="true"]{background:var(--gold);color:var(--ink)}
+.player .track[aria-pressed="true"] .tno{color:var(--navy)}
+.vpanel{margin-top:10px}
+.vchips{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;margin-bottom:8px;scrollbar-width:thin}
+.vchips button{flex:0 0 auto;border:2px solid var(--navy);background:#fff;color:var(--navy);padding:6px 10px;font-weight:700;min-height:40px;cursor:pointer;font-family:var(--sans);font-size:.88rem}
+.vchips button[aria-pressed="true"]{background:var(--navy);color:#fff}
+.player .vslot{margin:0}
+.player .vctl{margin-top:6px}
+.player .also{color:var(--ink)}
+@media(max-width:899px){.spread{grid-template-columns:1fr;padding-left:0}.spread .album{width:230px;height:230px;margin:10px auto 18px}.player{max-width:none}}
+/* Journey view */
+.jhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 16px}
+.jhead h1.d{color:#fff;margin:0;font-size:clamp(2.2rem,4.4vw,3.2rem)}
+.journey .jmore{margin-top:10px}
+.jpanel .jmore{border-color:var(--line)}
+.jpanel{min-height:0}
+.cycle-view,.still-view{padding-top:24px}
+.still-view h1{color:#fff}
+@media(max-width:899px){.spread{grid-template-columns:minmax(0,1fr)}}
+.tracks-2{max-width:none!important}
+.vhead.jhead{display:flex}
+.vhead.jhead .jlede{color:#fff;font-weight:600}
+@media(min-width:900px){.spread{grid-template-columns:300px minmax(0,1fr)}.spread .album{width:300px;height:300px}}
+.player{max-width:600px}
+@media(max-width:899px){.spread .album{width:230px;height:230px}}
+.tracks-2{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important}.player .track .tt{min-width:0;overflow-wrap:anywhere}.player{min-width:0}
+/* ---------- No-scroll landing pass ---------- */
+/* Home: text left, film right */
+.hero-grid{display:grid;gap:20px 40px;align-items:center}
+@media(min-width:960px){.hero-grid{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}}
+.hero{padding:28px 0 28px}
+.hero h1{font-size:clamp(3rem,6vw,5.2rem)}
+.hero .ctas{margin:16px 0 0}
+.hero .vwrap{border:4px solid var(--gold)}
+.hero .vwrap .vframe{width:min(100%, calc((100vh - 230px) * 16 / 9));margin:0 auto}
+/* Voices: player fills the right side, every voice tab visible */
+.player{max-width:none!important}
+.vchips{flex-wrap:wrap;overflow:visible}
+.player .vframe{width:min(100%, calc((100vh - 480px) * 16 / 9));min-width:min(100%, 480px);margin:0 auto}
+@media(max-width:899px){.player .vframe{width:100%}}
+/* Lessons: title and filters on one row */
+.lhero{padding-top:14px}
+.lhero-top{align-items:center;margin-bottom:10px}
+.lhero-top .lfilters{margin:0;flex:1 1 520px;max-width:760px;padding:8px 10px;gap:8px}
+.lhero-top .lfilters label{min-width:0;flex:1}
+.lhero-top .lfilters select{min-height:40px}
+.lhero h1{font-size:clamp(2.2rem,4.4vw,3.2rem)}
+.jr-page,.lhero .jr-page{padding-top:50px}
+.jr-page .sheet{padding:30px 24px 14px}
+/* Dream: journey button */
+.dh-journey{margin:14px 0 0}
+.dh-journey .nstar svg{fill:var(--navy)}
+/* Playbook: whole play on one screen */
+.pbhero{padding-bottom:16px}
+.pb-sec{padding-top:12px}
+.pb-top{display:flex;align-items:flex-end;justify-content:space-between;gap:8px 24px;flex-wrap:wrap-reverse}
+.pb-top .pb-tabs{flex:0 1 auto}
+.pb-title{text-align:right;padding-bottom:6px}
+.pb-title .kicker{margin:0;color:var(--sky)}
+.pb-title h1{color:#fff;margin:0;font-size:clamp(2rem,3.6vw,2.8rem);line-height:1}
+.pb-tab{padding:6px 16px 6px;font-size:clamp(1.1rem,2.2vw,1.5rem)}
+.pb-tab[aria-selected="true"]{padding-bottom:10px}
+.pb-binder .pb-page{padding:0 24px 14px}
+.pb-pagehead{margin:0 -24px 12px;padding:7px 24px}
+.pb-grid{gap:12px 32px}
+.pb-page h2.d{font-size:clamp(1.8rem,3vw,2.4rem);margin:0 0 4px}
+.pb-call{font-size:1rem;margin:0 0 6px}
+.pb-page .pb-grid > div > p{margin:0 0 8px;font-size:.95rem}
+.pb-diagram{margin:6px 0 0;max-width:300px}
+.pb-diagram figcaption{font-size:.8rem}
+.pb-page h3.long{margin:0 0 4px;font-size:1.05rem}
+.pb-areas{margin-bottom:10px}
+.pb-areas a{padding:7px 0 7px 36px;min-height:0}
+.pb-areas a:before{top:6px;font-size:1.5rem}
+.pb-areas span{font-size:.86rem;line-height:1.4}
+.pb-close{padding:8px 12px;margin-bottom:10px;font-size:.9rem}
+.pb-close p{line-height:1.45}
+.pb-page .btn{padding:8px 14px;min-height:40px}
+@media(max-width:899px){.pb-title{text-align:left;flex-basis:100%}}
+.pb-grid > div:first-child{display:flex;flex-direction:column;gap:0}
+.pb-grid > div:first-child .btn{align-self:flex-start}
+.pb-diagram{display:flex;gap:12px;align-items:flex-end;max-width:none}
+.pb-diagram svg{width:260px;flex:0 0 260px}
+.pb-diagram figcaption{max-width:180px}
+.pb-close{margin-top:10px}
+@media(max-width:600px){.pb-diagram{flex-direction:column;align-items:flex-start}.pb-diagram svg{width:100%;flex-basis:auto}}
+/* Lesson pages: compact header so the lesson starts on screen */
+.lesson-page .page-head{padding-top:10px}
+.lesson-page .back{margin:0;min-height:36px}
+.lhead{gap:6px 16px;align-items:center;grid-template-columns:auto 1fr!important}
+.lnum{font-size:clamp(2.6rem,5vw,3.6rem);line-height:.9}
+.lhead h1,.lhead h1.d,.lhead h1.long{font-size:clamp(1.6rem,2.8vw,2.2rem)!important;line-height:1.1;margin:2px 0 4px}
+.lhead .kicker{margin:0}
+.lhead p{margin:0}
+.lhead .tag{font-size:.72rem;padding:2px 8px}
+.case{margin-top:12px;gap:24px}
+.lstate{padding:14px 18px;border-left-width:10px}
+.lstate p:last-child{font-size:1.1rem}
+.lsec{margin-top:18px;padding-top:10px}
+.lsec h2,.lsec h2.d{font-size:1.5rem}
+.case-side .lsec:first-child{margin-top:0}
+.case-side .rphoto.wide,.case-main .rphoto.wide{display:none}
+.reflect h2,.reflect h2.d,.reflect h2.long{font-size:1.5rem!important;line-height:1.15}
+.case-side h2,.case-side h2.d{font-size:1.5rem}
+.page-head.lesson-page{padding-top:8px!important}
+.lesson-page .lnum{font-size:clamp(2.2rem,4vw,3.2rem)}
+@media(max-width:799px){.lhead h1,.lhead h1.d,.lhead h1.long{font-size:1.4rem!important}.lesson-page .lnum{font-size:2rem}}
+/* Subpages: compact headers, content on first screen */
+.sub-head{padding-top:10px!important;padding-bottom:14px!important}
+.sub-head .back{margin:0;min-height:34px}
+.sub-head .kicker{margin:0 0 2px}
+.sub-head h1,.sub-head h1.d,.sub-head h1.long,.phero .sub-head h1.d{font-size:clamp(1.7rem,3vw,2.4rem)!important;line-height:1.08;margin:0 0 6px}
+.sub-head .lede{font-size:1rem;line-height:1.5;margin:0 0 6px;max-width:62ch}
+.sub-head .sub{margin:0 0 8px}
+.area-top{display:grid;gap:16px 32px;align-items:start}
+@media(min-width:960px){.area-top{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr)}}
+.area-top .vslot{margin:0}
+.area-top .vcap{font-size:.9rem}
+.sub-head + section{padding-top:8px}
+.pattern h2,.pattern h2.d,.pblock h2,.pblock h2.d{font-size:1.5rem}
+.reflect h2,.reflect h2.d{font-size:1.5rem!important}
+/* Subpages: smaller section headings everywhere */
+.subpage h2.d{font-size:clamp(1.5rem,2.4vw,1.9rem)!important;line-height:1.1}
+.subpage h3.d{font-size:clamp(1.25rem,2vw,1.5rem)!important;line-height:1.12}
+.subpage .statement{padding:18px 22px}
+.subpage section{padding-top:20px;padding-bottom:20px}
+.subpage .phero .page-head{padding-bottom:12px!important}
+.subpage .phero .lede{font-size:.98rem}
+/* Results */
+.res-headrow{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:6px 24px;margin-bottom:12px}
+.res-headrow h1,.res-headrow h2{margin:0}
+.res-headrow .lede{margin:0;max-width:52ch}
+.results-page{padding-top:16px!important}
+.results-page h1.d{font-size:clamp(2.2rem,4.4vw,3.2rem)}
+.results-page .proof div{padding:12px 14px}
+.results-page .proof b{font-size:clamp(2.2rem,4.6vw,3.2rem)}
+.results-page .res-grid{margin-top:12px;gap:12px}
+.results-page .res-card{padding:14px 16px}
+.results-page .res-card h3{font-size:1.6rem}
+.results-page .apt td,.results-page .apt th{padding-top:4px;padding-bottom:4px}
+.results-page .foot{margin:6px 0 0}
 
 </style>
 </head>
@@ -2567,7 +2729,32 @@ form.bf-page h2{margin:0}
   });
 
   /* ---------- shared page parts ---------- */
-  function crumbs(list) {
+  function crumbs() { return ""; }
+  /* Section sub-navigation: one slim row under the header. Every link
+     loads its view at the top of the page, so nothing needs scrolling. */
+  const SUBNAV = {
+    voices: [["Scholars", "#/voices?seat=scholars"], ["Caregivers", "#/voices?seat=caregivers"], ["Teachers and Staff", "#/voices?seat=teachers"], ["School Leader", "#/voices?seat=leaders"], ["All videos", "#/watch"]],
+    playbook: [["The Plays", "#/playbook"], ["The DEEDS Cycle", "#/playbook/cycle"], ["Tools", "#/playbook/tools"]],
+    lessons: [["Lesson Plans", "#/lessons"], ["What We\u2019re Still Learning", "#/lessons/still-learning"]],
+    dream: [["Find Your Star", "#/dream"], ["The Design Journey", "#/dream/journey"], ["Join the Cohort", "#/dream/cohort"], ["Site Visit", "#/dream/visit"], ["Start the Conversation", "#/dream/conversation"], ["Briefs", "#/brief/funder"]]
+  };
+  const SECTION_OF = { voices: "voices", work: "voices", watch: "voices", playbook: "playbook", lessons: "lessons", dream: "dream", build: "dream", brief: "dream" };
+  function subnavActive(href) {
+    const h = location.hash || "#/", [hp, hq] = h.split("?"), [lp, lq] = href.split("?");
+    if (lq) { const want = new URLSearchParams(lq), have = new URLSearchParams(hq || ""); return hp === lp && [...want].every(([k, v]) => (have.get(k) || (k === "seat" ? "scholars" : "")) === v); }
+    if (lp === "#/brief/funder") return hp.startsWith("#/brief/");
+    if (lp === "#/watch") return hp.startsWith("#/watch");
+    return hp === lp;
+  }
+  function refreshSubnav() {
+    const n = $("#subnav"); if (!n) return;
+    $$("a", n).forEach(x => { if (subnavActive(x.getAttribute("href"))) x.setAttribute("aria-current", "page"); else x.removeAttribute("aria-current"); });
+  }
+  function subnavHTML(a) {
+    const list = SUBNAV[SECTION_OF[a]]; if (!list) return "";
+    return `<nav class="subnav no-print" id="subnav" aria-label="In this section"><div class="wrap"><div class="sn-row">${list.map(l => `<a href="${l[1]}">${esc(l[0])}</a>`).join("")}</div></div></nav>`;
+  }
+  function crumbsOld(list) {
     return `<nav class="crumbs" aria-label="Breadcrumb"><div class="wrap"><ol>${list.map((c, i) => i === list.length - 1
       ? `<li><span aria-current="page">${phx(c[0])}</span></li>` : `<li><a href="${c[1]}">${phx(c[0])}</a></li>`).join("")}</ol></div></nav>`;
   }
@@ -2577,11 +2764,12 @@ form.bf-page h2{margin:0}
   <div><p class="kicker">For HBCU and district partners</p><h2 id="inv-h" class="d">Bring this to your community</h2>
   <p class="lede">A guided 12-month design process, the full Playbook, and coaching from Transcend and HBCU ECP leadership. A 30-minute call is the first step. No commitment required.</p></div>
   <div class="inv-ctas"><a class="btn scarlet" href="#/dream/cohort" data-track="invite_apply">Apply for the Cohort</a>${SITE.bookingUrl ? `<a class="btn" href="${esc(SITE.bookingUrl)}" target="_blank" rel="noopener" data-track="booking_click">Book a 30-minute call</a>` : `<a class="btn" href="#/dream/conversation" data-track="invite_call">Request a 30-minute call</a>`}
-  <a class="inv-honest" href="#/lessons?section=still-learning">Read what we are still learning</a></div>
+  <a class="inv-honest" href="#/lessons/still-learning">Read what we are still learning</a></div>
 </div></section>`;
   }
   function whereNext(links, noInvite) {
-    return (noInvite ? "" : invite()) + `<section class="next on-navy" aria-labelledby="wn"><div class="wrap"><h2 id="wn" class="d">Where next?</h2><div class="links">${links.slice(0, 3).map(l => `<a href="${l[1]}"><b>${esc(l[0])}</b><span>${esc(l[2] || "")}</span></a>`).join("")}</div></div></section>`;
+    return noInvite ? "" : invite();
+    return `<section class="next on-navy" aria-labelledby="wn"><div class="wrap"><h2 id="wn" class="d">Where next?</h2><div class="links">${links.slice(0, 3).map(l => `<a href="${l[1]}"><b>${esc(l[0])}</b><span>${esc(l[2] || "")}</span></a>`).join("")}</div></div></section>`;
   }
   const band = () => `<div class="band" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>`;
   const lessonA = id => isPublic(id) ? `<a href="#/lessons/${id}">Lesson ${LES[id].number}: ${esc(LES[id].title)}</a>` : "";
@@ -2601,6 +2789,7 @@ form.bf-page h2{margin:0}
   function setQuery(base, q) {
     const s = new URLSearchParams(Object.entries(q).filter(([, v]) => v)).toString();
     history.replaceState(null, "", "#/" + base + (s ? "?" + s : ""));
+    refreshSubnav();
   }
 
   /* =====================================================================
@@ -2622,11 +2811,11 @@ form.bf-page h2{margin:0}
     return {
       title: "Be the Dream",
       html: `
-<section class="navy hero on-navy" aria-labelledby="h1"><div class="wrap">
+<section class="navy hero on-navy" aria-labelledby="h1"><div class="wrap hero-grid"><div class="hero-text">
   <p class="kicker">HBCU Early College Prep · Southeast Queens, NY</p>
   <h1 id="h1" class="d" tabindex="-1">Be the Dream</h1>
   <p class="lede">A first-of-its-kind HBCU-inspired early college high school in Queens. Hear the story, see what Year 1 taught us, and bring it home.</p>
-  <div class="ctas"><a class="btn scarlet" href="#/dream" data-track="hero_partner">Bring this to your community</a><a class="btn ghost" href="#/voices" data-track="hero_voices">Hear the village</a><a class="hero-link" href="#/playbook">Explore the Playbook</a></div>
+  <div class="ctas"><a class="btn scarlet" href="#/dream" data-track="hero_partner">Bring this to your community</a><a class="btn ghost" href="#/voices" data-track="hero_voices">Hear the village</a><a class="hero-link" href="#/playbook">Explore the Playbook</a></div></div>
   <div class="vwrap">${slot("home-hero", { autoplay: true })}</div>
 </div></section>
 <section class="skyb" aria-labelledby="q-h"><div class="wrap">
@@ -2639,25 +2828,13 @@ form.bf-page h2{margin:0}
 </div></section>
 ${band()}
 <section class="results-merged" id="results" tabindex="-1" aria-labelledby="res-h" style="padding-top:24px"><div class="wrap">
-  <p class="kicker">Inaugural year, 2025 to 2026</p><h2 id="res-h" class="d">Year 1 results</h2>
-  <p class="lede">Ninth graders doing college work, and showing it on the measures that count.</p>
+  <div class="res-headrow"><div><p class="kicker">Inaugural year, 2025 to 2026</p><h2 id="res-h" class="d">Year 1 results</h2></div><a class="btn" href="#/results">See all results and data</a></div>
   <div class="proof">
     <div><b>100%</b><span>pass rate across early college courses</span></div>
     <div><b>${RESULTS.credits.pct}%</b><span>of scholars earned ${RESULTS.credits.credits} college credits through DSU</span></div>
     <div><b>${RESULTS.regents.map(r => r.rate + "%").join(" \u00B7 ")}</b><span>Regents pass rates: ${RESULTS.regents.map(r => esc(r.exam)).join(" and ")}</span></div>
     <div><b>1,000+</b><span>applications for 100 seats</span></div>
   </div>
-  <div class="res-grid res-grid2">
-    <div class="res-card wide"><h3 class="d">${esc(RESULTS.ap.exam)} exam</h3><p class="foot" style="margin-top:0">${RESULTS.ap.takers} ninth-grade scholars. ${esc(RESULTS.ap.note)}.</p>
-      <table class="apt"><caption class="sr">${esc(RESULTS.ap.exam)} score distribution, ${RESULTS.ap.takers} scholars</caption>
-        <thead><tr><th scope="col">Score</th><th scope="col">Scholars</th><th scope="col"><span class="sr">Share</span></th></tr></thead>
-        <tbody>${RESULTS.ap.scores.map(s => { const p = Math.round(s.n / RESULTS.ap.takers * 100); return `<tr class="${s.score >= 3 ? "pass" : ""}"><th scope="row"><b>${s.score}</b> ${esc(s.label)}</th><td>${s.n} <span>(${p}%)</span></td><td aria-hidden="true"><span class="bar" style="width:${p}%"></span></td></tr>`; }).join("")}</tbody></table>
-      <p class="res-sum"><b>${Math.round(RESULTS.ap.scores.filter(s => s.score >= 3).reduce((t, s) => t + s.n, 0) / RESULTS.ap.takers * 100)}%</b> ${esc(RESULTS.ap.summary.replace(/^\d+% /, ""))}.</p></div>
-    <div class="res-card gold"><h3 class="d">Also in Year 1</h3>
-      <div class="res-row"><span>JA Stock Market Challenge</span><b>14th</b></div><p class="foot">nationally</p>
-      <p style="margin-top:12px">Every scholar is on track for an Associate\u2019s degree and a high school diploma, with automatic admission to Delaware State University.</p></div>
-  </div>
-  <p class="foot">Year 1 figures.${LAUNCH ? "" : ` ${phx(RESULTS.source)} Updated ${phx(SITE.proofUpdated)}.`}</p>
 </div></section>
 <div class="wrap" style="padding-top:28px"><p class="kicker">Built in partnership with</p><div class="partners home-partners">${PARTNERS.map(p => `<a href="${p.href}" target="_blank" rel="noopener" aria-label="${esc(p.n)} (opens in a new tab)">${p.svg}</a>`).join("")}</div></div>
 ${partnerQuotes()}
@@ -2689,7 +2866,7 @@ ${invite()}`,
       <div class="in"><h3 class="${hc(v.title)}"><a href="#/watch/${v.id}">${phx(v.title)}</a></h3>
         <span class="who">${phx(v.speaker)}</span><span class="role">${phx(v.role)}</span>
         <span>${srcOf(v) ? '<span class="tag k">Ready to watch</span>' : `<span class="tag s">${esc(v.production)}</span>`}</span>
-        <span class="rel">${lid ? `Related lesson: ${lessonA(lid)}` : ""}</span></div></article>`;
+        </div></article>`;
   }
 
   function pageWatch(q) {
@@ -2736,7 +2913,7 @@ ${whereNext([["Voices of the Village", "#/voices", "Every voice in the village"]
     return {
       title: v.title,
       html: `${crumbs([["Home", "#/"], ["Voices of the Village", "#/voices"], ["All videos", "#/watch"], [v.title]])}
-<div class="wrap page-head">${back("All videos", "#/watch")}
+<div class="wrap page-head sub-head">${back("All videos", "#/watch")}
   <p class="kicker">${esc(SER[v.series] || "")}</p>${H(1, v.title).replace("<h1", '<h1 tabindex="-1"')}
   <p class="sub">${phx(v.speaker)}${v.role ? ", " + phx(v.role) : ""} · ${phx(v.duration)}${v.rawLength ? ` <span class="tag">Raw interview ${esc(v.rawLength)}</span>` : ""}</p>
   ${videoFrame(v, {})}
@@ -2744,8 +2921,7 @@ ${whereNext([["Voices of the Village", "#/voices", "Every voice in the village"]
 </div>
 <section><div class="wrap pattern">
   <div class="pblock"><h2 class="d">About this video</h2><p>${phx(v.summary || "")}</p>${(v.phases || []).length ? `<p>${v.phases.map(p => `<span class="tag k">${p}</span>`).join("")}</p>` : ""}</div>
-  <div class="pblock r"><h2 class="d">Related lessons</h2>${lessons.length ? `<div class="lessonlinks">${lessons.map(lessonA).join("")}</div>` : "<p>No public lesson linked yet.</p>"}
-  </div>
+
 </div></section>
 ${whereNext([["All videos", "#/watch", "Back to the library"], lessons[0] ? ["The lesson", "#/lessons/" + lessons[0], LES[lessons[0]].title] : ["Lessons", "#/lessons", "Year 1 lessons"], ["Voices of the Village", "#/voices", "Every voice in the village"]])}`,
       after() {
@@ -2762,31 +2938,24 @@ ${whereNext([["All videos", "#/watch", "Back to the library"], lessons[0] ? ["Th
       title: "Voices of the Village",
       html: `${crumbs([["Home", "#/"], ["Voices of the Village"]])}
 <section class="phero vhero vinyl-hero on-navy" style="--bg:url('${IMAGES.vinyl.src}')"><div class="wrap page-head">
-  <div class="vhead"><p class="kicker">It takes a village</p><h1 class="d" tabindex="-1">Voices of the Village</h1>
-    <p class="lede">Every voice that made Year 1, on one record.</p></div>
+  <div class="vhead jhead"><h1 class="d" tabindex="-1">Voices of the Village</h1><span class="jlede">Every voice that made Year 1, on one record.</span></div>
   <div class="spread">
     <div class="album spin playing" id="album"><div class="sleeve" aria-hidden="true"><span class="hole"></span></div>
       <div class="arm-wrap" aria-hidden="true"><div class="arm"><svg viewBox="0 0 40 232"><circle cx="20" cy="20" r="16" fill="#C9CFD5" stroke="#5E6872" stroke-width="3"/><circle cx="20" cy="20" r="5" fill="#5E6872"/><rect x="18" y="20" width="5" height="186" fill="#DDE2E6" stroke="#5E6872" stroke-width="1.5"/><rect x="11" y="200" width="18" height="28" fill="#1A4C81" stroke="#0E2C4C" stroke-width="2"/><rect x="18" y="226" width="4" height="6" fill="#FFDE42"/></svg></div></div>
       <div class="record" role="img" aria-label="A spinning record with a photo of scholars on its label: ${esc(IMAGES.vinyl.alt)}"><svg viewBox="0 0 200 200" aria-hidden="true"><defs><clipPath id="lbl"><circle cx="100" cy="100" r="80"/></clipPath></defs><circle cx="100" cy="100" r="99" fill="#111"/>${[96, 92, 88, 84].map(r => `<circle cx="100" cy="100" r="${r}" fill="none" stroke="#2c2c2c" stroke-width="1.2"/>`).join("")}<image href="${IMAGES.vinyl.src}" x="20" y="20" width="160" height="160" preserveAspectRatio="xMidYMid slice" clip-path="url(#lbl)"/><circle cx="100" cy="100" r="80" fill="none" stroke="#FFDE42" stroke-width="3"/><circle cx="100" cy="100" r="5" fill="#fff" stroke="#111" stroke-width="2"/></svg></div>
     </div>
-    <div class="backcover">
-      <p class="bc-side" aria-hidden="true">HBCU Early College Prep \u00B7 Year 1 \u00B7 Southeast Queens, NY</p>
-      <div class="ruled"><p class="ruled-hint">Click a track to listen</p><ol class="tracks" aria-label="Tracklist">${VILLAGE.map((g, i) => `<li><button type="button" class="track" data-seat="${g.id}" aria-pressed="false" aria-controls="vpanel"><span class="tno">${i + 1}</span><span class="tt">${esc(g.short)}<sup aria-hidden="true">${["*", "**", "\u2020", "\u2020\u2020"][i]}</sup></span><span class="tnow">Now playing</span></button></li>`).join("")}</ol>
-        <div class="blank" aria-hidden="true"><i></i><i></i><i></i></div>
-      </div>
-      <div class="liner"><p>${VILLAGE.map((g, i) => `<b>${["*", "**", "\u2020", "\u2020\u2020"][i]}</b> Featuring ${esc(g.feat)}`).join(" \u2022 ")}</p>
-        <p>Produced by the HBCU ECP village \u2022 In partnership with Delaware State University, UNCF, XQ, and Transcend \u2022 <a href="#/watch">Hear every video in the library</a></p></div>
-      <div class="barcode" aria-hidden="true"><span></span><b>HBCU-ECP 001</b></div>
+    <div class="player">
+      <div class="ruled"><ol class="tracks tracks-2" aria-label="Tracklist">${VILLAGE.map((g, i) => `<li><button type="button" class="track" data-seat="${g.id}" aria-pressed="false" aria-controls="vpanel"><span class="tno">${i + 1}</span><span class="tt">${esc(g.short)}</span></button></li>`).join("")}</ol></div>
+      <div id="vpanel" class="vpanel" tabindex="-1" aria-live="polite"></div>
     </div>
   </div>
 </div></section>
-<section class="vpanel-wrap" aria-live="polite"><div class="wrap"><div id="vpanel" tabindex="-1"></div></div></section>
 ${whereNext([["Lessons Learned", "#/lessons", "What Year 1 taught us"], ["Playbook", "#/playbook", "How the model works"], ["Dream With Us", "#/dream", "Bring this to your community"]])}`,
       after() {
         const panel = $("#vpanel");
         const lessonsOf = ids => (ids || []).filter(isPublic);
         const itemsFor = g => g.strengths
-          ? VOICES.map((s, i) => ({ id: s.id, chip: `${i + 1}. ${s.title}`, kicker: `Strength ${i + 1}`, title: s.title, d: s.d, photo: s.photo, lessons: lessonsOf(s.lessons), ready: true, media: () => slot(s.slotId) }))
+          ? VOICES.map((s, i) => ({ id: s.id, chip: s.title, kicker: `Strength ${i + 1}`, title: s.title, d: s.d, photo: s.photo, lessons: lessonsOf(s.lessons), ready: true, media: () => slot(s.slotId) }))
           : VIDEOS.filter(v => v.series === g.series).map(v => ({ id: v.id, chip: v.title, kicker: SER[v.series] || "Voice", title: v.title, d: v.summary || "", lessons: lessonsOf(v.lessonIds), ready: !!srcOf(v), media: () => videoFrame(v) }));
         let seat = VILLAGE.find(g => g.id === q.seat) ? q.seat : "scholars", item = q.v || "";
         const show = (sid, iid, focus) => {
@@ -2796,14 +2965,12 @@ ${whereNext([["Lessons Learned", "#/lessons", "What Year 1 taught us"], ["Playbo
           $$(".track").forEach(b => b.setAttribute("aria-pressed", b.dataset.seat === sid));
           pageFull = new Set();
           panel.className = "vpanel p-" + sid;
-          panel.innerHTML = `<div class="vp-head"><p class="kicker">Now playing \u00B7 Track ${VILLAGE.indexOf(g) + 1}</p><h2 class="d">${esc(g.title)}</h2><p class="lede">${phx(g.d)}</p></div>
-            ${items.length > 1 ? `<div class="jump vchips" role="group" aria-label="${esc(g.title)}: choose a voice">${items.map(x => `<button type="button" data-item="${x.id}" aria-pressed="${x === it}">${phx(x.chip)}</button>`).join("")}</div>` : ""}
-            ${it ? `<div class="voice-grid vp-body"><div>${it.photo ? realPhoto(it.photo, "", "voice-photo") : ""}<p class="kicker" style="margin-top:${it.photo ? "16px" : "0"}">${esc(it.kicker)}</p>${H(3, it.title)}${it.d ? `<p>${phx(it.d)}</p>` : ""}
-              ${it.lessons.length ? `<p><strong>Related lessons:</strong></p><div class="lessonlinks">${it.lessons.map(lessonA).join("")}</div>` : ""}</div><div>${it.media()}</div></div>` : `<p>Videos for this seat are coming soon.</p>`}`;
+          panel.innerHTML = `${items.length > 1 ? `<div class="vchips" role="group" aria-label="${esc(g.title)}: choose a voice">${items.map(x => `<button type="button" data-item="${x.id}" aria-pressed="${x === it}">${phx(x.chip)}</button>`).join("")}</div>` : ""}
+            ${it ? it.media() : ""}`;
           setQuery("voices", { seat: sid, v: item });
           if (focus) panel.focus({ preventScroll: true });
         };
-        $$(".track").forEach(b => b.addEventListener("click", () => { show(b.dataset.seat, "", false); const al = $("#album"); al.classList.remove("spin", "playing"); void al.offsetWidth; al.classList.add("spin"); setTimeout(() => al.classList.add("playing"), 350); goTo(panel); }));
+        $$(".track").forEach(b => b.addEventListener("click", () => { show(b.dataset.seat, "", false); const al = $("#album"); al.classList.remove("spin", "playing"); void al.offsetWidth; al.classList.add("spin"); setTimeout(() => al.classList.add("playing"), 350); }));
         panel.addEventListener("click", e => { const b = e.target.closest("[data-item]"); if (b) { show(seat, b.dataset.item); const nb = panel.querySelector(`[data-item="${b.dataset.item}"]`); if (nb) nb.focus(); } });
         show(seat, item);
       }
@@ -2823,21 +2990,16 @@ ${whereNext([["Lessons Learned", "#/lessons", "What Year 1 taught us"], ["Playbo
       html: `${crumbs([["Home", "#/"], ["Lessons Learned"]])}
 <section class="lhero on-navy" style="--bg:url('${IMAGES.classroom.src}')" aria-labelledby="lh1"><div class="wrap">
 <div class="lhero-top"><div><p class="kicker">Year 1 lesson plans</p><h1 id="lh1" class="d" tabindex="-1">Lessons Learned</h1></div>
-<p class="lhero-lede">One school. One year. Here is what we learned, including what is still hard. Every lesson pairs with a voice.</p></div>
 <form class="filters lfilters no-print" id="lf" aria-label="Filter lessons">
   <label>Theme<select name="theme"><option value="">All themes</option>${THEMES.map(t => `<option ${t === q.theme ? "selected" : ""}>${t}</option>`).join("")}</select></label>
   <label>Role<select name="role"><option value="">All roles</option>${ROLES.map(r => `<option value="${r}" ${r === q.role ? "selected" : ""}>${cap(r)}</option>`).join("")}</select></label>
-  <button class="btn ghost" type="reset">Clear filters</button>
-</form>
-<p class="count" id="lc" aria-live="polite"></p>
+  <button class="btn ghost" type="reset">Clear</button>
+</form></div>
+<p class="count sr" id="lc" aria-live="polite"></p>
 <div class="journal" id="lg">
   <div class="jr-tabs" role="tablist" aria-label="Year 1 lessons" aria-orientation="vertical">${PUBLIC.map(l => `<button type="button" role="tab" class="jr-tab th-${THEMES.indexOf(l.theme)}" id="jt-${l.id}" data-id="${l.id}" data-theme="${esc(l.theme)}" data-roles="${esc(l.roles.join("|"))}" aria-selected="false" aria-controls="jrpage" tabindex="-1"><span class="tn">${String(l.number).padStart(2, "0")}</span><span class="tt">${esc(l.title)}</span></button>`).join("")}</div>
   <div class="jr-page" id="jrpage" role="tabpanel" tabindex="0"></div>
 </div></div></section>
-<section class="navy on-navy" id="still-learning" aria-labelledby="sl-h"><div class="wrap">
-  <h2 id="sl-h" class="d">What we are still learning</h2><p class="lede">Saying these out loud makes the rest of this site more credible.</p>
-  <div class="still">${STILL_LEARNING.map(s => `<div><b>${esc(s.t)}</b>${phx(s.d)}</div>`).join("")}</div>
-</div></section>
 ${whereNext([["Watch", "#/watch", "Hear the voices behind the lessons"], ["Playbook", "#/playbook", "Go deeper on each component"], ["Tools", "#/playbook/tools", "Rubric, reflection sets, templates"]])}`,
       after() {
         const f = $("#lf"), page = $("#jrpage");
@@ -2881,12 +3043,22 @@ ${whereNext([["Watch", "#/watch", "Hear the voices behind the lessons"], ["Playb
           if (n > -1 && vis[n]) { e.preventDefault(); open(vis[n].dataset.id, true); }
         });
         f.addEventListener("change", draw); f.addEventListener("reset", () => setTimeout(draw)); draw();
-        if (q.section) { const el = $("#" + q.section); if (el) { el.scrollIntoView(); return true; } }
       }
     };
   }
 
+  function pageStill() {
+    return {
+      title: "What We\u2019re Still Learning",
+      html: `<section class="navy on-navy still-view" id="still-learning" aria-labelledby="sl-h"><div class="wrap">
+  <p class="kicker">Year 1, honestly</p><h1 id="sl-h" class="d" tabindex="-1">What we are still learning</h1><p class="lede">Saying these out loud makes the rest of this site more credible.</p>
+  <div class="still">${STILL_LEARNING.map(s => `<div><b>${esc(s.t)}</b>${phx(s.d)}</div>`).join("")}</div>
+</div></section>
+${whereNext([])}`
+    };
+  }
   function pageLesson(id) {
+    if (id === "still-learning") return pageStill();
     const l = LES[id];
     if (!l) return pageNotFound();
     if (l.status !== "public") return {
@@ -2901,7 +3073,7 @@ ${whereNext([["Watch", "#/watch", "Hear the voices behind the lessons"], ["Playb
     return {
       title: `Lesson ${l.number}: ${l.title}`,
       html: `${crumbs([["Home", "#/"], ["Lessons Learned", "#/lessons"], ["Lesson " + l.number]])}
-<div class="wrap page-head">${back("Lessons Learned", "#/lessons")}
+<div class="wrap page-head lesson-page">${back("All lesson plans", "#/lessons")}
   <div class="lhead"><div class="lnum" aria-hidden="true">${String(l.number).padStart(2, "0")}</div>
   <div><p class="kicker">Lesson plan ${l.number} · ${esc(l.theme)}</p>${H(1, l.title).replace("<h1", '<h1 tabindex="-1"')}
   <p>${l.roles.map(r => `<span class="tag">${esc(cap(r))}</span>`).join("")}${l.isNew ? '<span class="tag k">From the interviews</span>' : ""}</p></div></div>
@@ -3011,18 +3183,14 @@ ${whereNext([["All lessons", "#/lessons", "Filter by theme or role"], ["Playbook
       title: "Playbook",
       html: `${crumbs([["Home", "#/"], ["Playbook"]])}
 <section class="pbhero on-navy" style="--bg:url('${IMAGES.cafeteria.src}')" aria-labelledby="pbh1">
-<div class="wrap page-head pb-head"><div><p class="kicker">Partnership Playbook Hub</p><h1 id="pbh1" class="d" tabindex="-1">The Playbook</h1></div>
-<p class="pb-lede">Open a tab to see each play.</p>${tabs("model")}</div>
 <div class="pb-sec"><div class="wrap">
   <div class="pbook">
-    <div class="pb-tabs" role="tablist" aria-label="Playbook components">${PLAYBOOK.components.map((c, i) => `<button type="button" role="tab" class="pb-tab c-${c.color}" id="pbt-${c.id}" data-c="${c.id}" aria-selected="false" aria-controls="pbpage" tabindex="-1"><small>Play ${c.num}</small>${esc(c.title)}</button>`).join("")}</div>
+    <div class="pb-top"><div class="pb-tabs" role="tablist" aria-label="Playbook components">${PLAYBOOK.components.map((c, i) => `<button type="button" role="tab" class="pb-tab c-${c.color}" id="pbt-${c.id}" data-c="${c.id}" aria-selected="false" aria-controls="pbpage" tabindex="-1"><small>Play ${c.num}</small>${esc(c.title)}</button>`).join("")}</div><div class="pb-title"><p class="kicker">Partnership Playbook Hub</p><h1 id="pbh1" class="d" tabindex="-1">The Playbook</h1></div></div>
     <div class="pb-binder"><div class="pb-spine" aria-hidden="true"><i></i><i></i><i></i><span>Playbook</span></div><div class="pb-page" id="pbpage" role="tabpanel" tabindex="0"></div></div>
   </div>
 </div></div></section>
-<section class="wash" aria-labelledby="cy-h"><div class="wrap"><h2 id="cy-h" class="d">The DEEDS cycle</h2><p class="lede">Choose a phase to see what happens in it.</p>${cycleDiagram()}</div></section>
 ${whereNext([["HBCU Legacy", "#/playbook/hbcu-legacy", "Component 1"], ["Early College", "#/playbook/early-college", "Component 2"], ["Real-World Learning", "#/playbook/real-world-learning", "Component 3"]])}`,
       after() {
-        bindCycle();
         const page = $("#pbpage"), C = PLAYBOOK.components;
         const qq = parseHash().q;
         const open = (cid, focus) => {
@@ -3035,10 +3203,11 @@ ${whereNext([["HBCU Legacy", "#/playbook/hbcu-legacy", "Component 1"], ["Early C
               ${H(2, c.title)}
               <p class="pb-call"><b>The play call:</b> ${esc(c.question)}</p><p>${esc(c.card)}</p>
               ${playDiagram(c)}
+              <div class="pb-close"><b>The goal: ${esc(c.closing.t.replace(/^The Goal: /, ""))}</b><p>${esc(c.closing.d)}</p></div>
+              <a class="btn" href="#/playbook/${c.id}">Open the full play: ${esc(c.title)}</a>
             </div>
             <div><h3 class="long">Run the play</h3><ol class="pb-areas">${c.areas.map((k, i) => { const A = PLAYBOOK.areas[c.id + "/" + k]; return `<li><a href="#/playbook/${c.id}/${k}"><b>${esc(A.title)}</b><span>${esc(A.card || A.intro)}</span></a></li>`; }).join("")}</ol>
-              <div class="pb-close"><b>The goal: ${esc(c.closing.t.replace(/^The Goal: /, ""))}</b><p>${esc(c.closing.d)}</p></div>
-              <a class="btn" href="#/playbook/${c.id}">Open the full play: ${esc(c.title)}</a></div></div>`;
+</div></div>`;
           setQuery("playbook", { tab: c.id });
           if (focus) $("#pbt-" + c.id).focus();
         };
@@ -3053,6 +3222,40 @@ ${whereNext([["HBCU Legacy", "#/playbook/hbcu-legacy", "Component 1"], ["Early C
     };
   }
 
+  function pageResults() {
+    return {
+      title: "Results and Data",
+      html: `<section class="results-merged results-page" aria-labelledby="res-h1"><div class="wrap">
+  <div class="res-headrow"><div><p class="kicker">Inaugural year, 2025 to 2026</p><h1 id="res-h1" class="d" tabindex="-1">Results and Data</h1></div><p class="lede">Ninth graders doing college work, and showing it on the measures that count.</p></div>
+  <div class="proof">
+    <div><b>100%</b><span>pass rate across early college courses</span></div>
+    <div><b>${RESULTS.credits.pct}%</b><span>of scholars earned ${RESULTS.credits.credits} college credits through DSU</span></div>
+    <div><b>${RESULTS.regents.map(r => r.rate + "%").join(" \u00B7 ")}</b><span>Regents pass rates: ${RESULTS.regents.map(r => esc(r.exam)).join(" and ")}</span></div>
+    <div><b>1,000+</b><span>applications for 100 seats</span></div>
+  </div>
+  <div class="res-grid res-grid2">
+    <div class="res-card wide"><h3 class="d">${esc(RESULTS.ap.exam)} exam</h3><p class="foot" style="margin-top:0">${RESULTS.ap.takers} ninth-grade scholars. ${esc(RESULTS.ap.note)}.</p>
+      <table class="apt"><caption class="sr">${esc(RESULTS.ap.exam)} score distribution, ${RESULTS.ap.takers} scholars</caption>
+        <thead><tr><th scope="col">Score</th><th scope="col">Scholars</th><th scope="col"><span class="sr">Share</span></th></tr></thead>
+        <tbody>${RESULTS.ap.scores.map(s => { const p = Math.round(s.n / RESULTS.ap.takers * 100); return `<tr class="${s.score >= 3 ? "pass" : ""}"><th scope="row"><b>${s.score}</b> ${esc(s.label)}</th><td>${s.n} <span>(${p}%)</span></td><td aria-hidden="true"><span class="bar" style="width:${p}%"></span></td></tr>`; }).join("")}</tbody></table>
+      <p class="res-sum"><b>${Math.round(RESULTS.ap.scores.filter(s => s.score >= 3).reduce((t, s) => t + s.n, 0) / RESULTS.ap.takers * 100)}%</b> ${esc(RESULTS.ap.summary.replace(/^\d+% /, ""))}.</p></div>
+    <div class="res-card gold"><h3 class="d">Also in Year 1</h3>
+      <div class="res-row"><span>JA Stock Market Challenge</span><b>14th</b></div><p class="foot">nationally</p>
+      <p style="margin-top:12px">Every scholar is on track for an Associate\u2019s degree and a high school diploma, with automatic admission to Delaware State University.</p></div>
+  </div>
+  <p class="foot">Year 1 figures.${LAUNCH ? "" : ` ${phx(RESULTS.source)} Updated ${phx(SITE.proofUpdated)}.`}</p>
+</div></section>
+${whereNext([])}`
+    };
+  }
+  function pageCycle() {
+    return {
+      title: "The DEEDS Cycle",
+      html: `<section class="wash cycle-view" aria-labelledby="cy-h"><div class="wrap"><p class="kicker">Real-world learning</p><h1 id="cy-h" class="d" tabindex="-1">The DEEDS Cycle</h1><p class="lede">Choose a phase to see what happens in it.</p>${cycleDiagram()}</div></section>
+${whereNext([])}`,
+      after() { bindCycle(); }
+    };
+  }
   function pageComponent(cid) {
     const c = PLAYBOOK.components.find(x => x.id === cid);
     if (!c) return pageNotFound();
@@ -3061,7 +3264,7 @@ ${whereNext([["HBCU Legacy", "#/playbook/hbcu-legacy", "Component 1"], ["Early C
     return {
       title: c.title,
       html: `${crumbs([["Home", "#/"], ["Playbook", "#/playbook"], [c.title]])}
-<section class="phero on-navy" style="--bg:url('${IMAGES[c.photo || "cafeteria"].src}')"><div class="wrap page-head">${back("the Playbook", "#/playbook")}<p class="kicker">Component ${c.num} · ${esc(c.title)}</p>${H(1, c.question).replace("<h1", '<h1 tabindex="-1"')}<p class="lede">${esc(c.intro.split(/(?<=\.)\s/)[0])}</p></div></section>
+<section class="phero on-navy" style="--bg:url('${IMAGES[c.photo || "cafeteria"].src}')"><div class="wrap page-head sub-head">${back("the Playbook", "#/playbook")}<p class="kicker">Component ${c.num} · ${esc(c.title)}</p>${H(1, c.question).replace("<h1", '<h1 tabindex="-1"')}<p class="lede">${esc(c.intro.split(/(?<=\.)\s/)[0])}</p></div></section>
 <section><div class="wrap"><h2 class="d">What it takes: ${c.areas.length} areas</h2>
 <div class="grid ${c.areas.length > 3 ? "g3" : "g3"}">${c.areas.map((a, i) => { const A = PLAYBOOK.areas[cid + "/" + a]; return `<a class="card t-${c.color}" href="#/playbook/${cid}/${a}"><p class="kicker">${esc(A.label || "Area " + (i + 1))}</p>${H(3, A.title)}<p class="kicker" style="text-transform:none;letter-spacing:0">${esc(A.sub)}</p><p>${esc(A.card || A.intro)}</p><span class="card-cta">See what is needed</span></a>`; }).join("")}</div>
 <div class="statement" style="margin-top:32px">${H(2, c.closing.t)}<p>${esc(c.closing.d)}</p></div></div></section>
@@ -3093,13 +3296,10 @@ ${whereNext([[c.areas.length ? PLAYBOOK.areas[cid + "/" + c.areas[0]].title : "P
     return {
       title: A.title,
       html: `${crumbs(crumbList)}
-<div class="wrap page-head">${back(backTo[0], backTo[1])}<p class="kicker">${esc(c.title)}${parent ? " · Expansive Opportunities" : ""} · ${esc(A.label)}</p>${H(1, A.title).replace("<h1", '<h1 tabindex="-1"')}<p class="kicker" style="text-transform:none;letter-spacing:0">${esc(A.sub)}</p><p class="lede">${esc(A.intro)}</p></div>
+<div class="wrap page-head sub-head area-top"><div class="at-text">${back(backTo[0], backTo[1])}<p class="kicker">${esc(c.title)}${parent ? " · Expansive Opportunities" : ""} · ${esc(A.label)}</p>${H(1, A.title).replace("<h1", '<h1 tabindex="-1"')}<p class="kicker" style="text-transform:none;letter-spacing:0">${esc(A.sub)}</p><p class="lede">${esc(A.intro)}</p>${A.watchFor ? `<p class="vcap"><strong>What to look for:</strong> ${esc(A.watchFor)}</p>` : ""}</div><div class="at-media">${slot(A.slotId, { desc: A.slotDesc })}</div></div>
 <section style="padding-top:16px"><div class="wrap">
-  ${slot(A.slotId, { kicker: "Video example", desc: A.slotDesc })}
-  ${A.watchFor ? `<p class="vcap"><strong>What to look for:</strong> ${esc(A.watchFor)}</p>` : ""}
-  ${A.photo ? realPhoto(A.photo, "", "wide") : ""}
-  ${extras.length ? `<div style="margin-top:32px">${extras.join("")}</div>` : ""}
-  <div class="pattern" style="margin-top:40px">
+  ${extras.length ? `<div>${extras.join("")}</div>` : ""}
+  <div class="pattern" style="margin-top:24px">
     ${A.strong ? `<div class="pblock"><h2 class="d">${esc(A.strongLabel || "What strong looks like")}</h2>${ul(A.strong)}</div>` : ""}
     ${A.breakdowns ? `<div class="pblock r"><h2 class="d">Common breakdown points</h2>${ul(A.breakdowns, "r")}</div>` : ""}
     <div class="pblock k"><h2 class="d">Lessons learned</h2>${A.learned ? ul(A.learned, "k") : "<p>Each pathway above carries its own lessons learned.</p>"}${rel.length ? `<h3 class="long" style="margin-top:16px">Year 1 lessons on this</h3><div class="lessonlinks">${rel.map(lessonA).join("")}</div>` : ""}</div>
@@ -3144,7 +3344,7 @@ ${whereNext(sibs.slice(0, 2).concat([["Year 1 Lessons", "#/lessons", "Every less
     return {
       title: "Playbook Tools",
       html: `${crumbs([["Home", "#/"], ["Playbook", "#/playbook"], ["Tools"]])}
-<div class="wrap page-head tools-head">${back("the Playbook", "#/playbook")}<div class="th-row"><div><p class="kicker">Partnership Playbook Hub</p><h1 class="d" tabindex="-1">Tools</h1></div>${tabs("tools")}</div></div>
+<div class="wrap page-head tools-head">${back("the Playbook", "#/playbook")}<div class="th-row"><div><p class="kicker">Partnership Playbook Hub</p><h1 class="d" tabindex="-1">Tools</h1></div></div></div>
 <section class="tb-wrap"><div class="wrap">
   <div class="toolbox" id="toolbox">
     <div class="tb-handle" aria-hidden="true"><i></i></div>
@@ -3194,7 +3394,7 @@ ${whereNext([["The Model", "#/playbook", "Three components"], ["Lesson 4", "#/le
     const J = JOURNEY, S = J.stages, Y = [92, 60, 80, 38, 66, 28, 50, 6];
     const pts = S.map((s, i) => `${50 + 100 * i},${Y[i] + 22}`).join(" ");
     return `<section class="journey sky on-navy" id="journey" tabindex="-1" aria-label="Cohort design journey"><div class="shoot" aria-hidden="true"><i></i><i></i><i></i></div><div class="wrap">
-  <p class="jhead"><span class="kicker">See how it unfolds</span> <span class="jlede">The design journey, in eight stars. Choose one to step inside.</span></p>
+  <div class="jhead"><h1 class="d" tabindex="-1">The Design Journey</h1><span class="jlede">Eight chapters to opening day. Choose a star.</span></div>
   <div class="constellation"><svg class="cline" viewBox="0 0 800 140" preserveAspectRatio="none" aria-hidden="true"><polyline points="${pts}"/></svg>
   <ol class="jtrack" aria-label="Journey chapters, January 2027 to fall 2029">${S.map((s, i) => `<li style="--y:${Y[i]}px"><button type="button" data-stage="${i}" aria-pressed="${i === 0}" aria-controls="jpanel" class="${i === S.length - 1 ? "north" : ""}"><span class="st">${i === S.length - 1 ? STAR4 : STAR5}</span><b><span class="n">${i + 1}</span> ${esc(s.short)}</b>${s.deeds ? `<span class="dtag">${esc(s.deeds)}</span>` : ""}<span class="w">${i === S.length - 1 ? "The North Star \u00B7 " : ""}${esc(s.when)}</span></button></li>`).join("")}</ol></div>
   <div class="jpanel" id="jpanel" aria-live="polite"></div>
@@ -3219,8 +3419,8 @@ ${whereNext([["The Model", "#/playbook", "Three components"], ["Lesson 4", "#/le
         <p class="jprod"><strong>What it produces:</strong> ${esc(s.out.join("; "))}.</p>
         <div class="jnav">${i > 0 ? `<button type="button" class="btn sm ghost" data-go="${i - 1}">Previous</button>` : "<span></span>"}${i < S.length - 1 ? `<button type="button" class="btn sm" data-go="${i + 1}">Next chapter: ${esc(S[i + 1].short)}</button>` : ""}</div>`;
     };
-    $$(".jtrack button").forEach(b => b.addEventListener("click", () => { show(+b.dataset.stage); goTo(panel); }));
-    panel.addEventListener("click", e => { const b = e.target.closest("[data-go]"); if (b) { show(+b.dataset.go); goTo(panel); } });
+    $$(".jtrack button").forEach(b => b.addEventListener("click", () => show(+b.dataset.stage)));
+    panel.addEventListener("click", e => { const b = e.target.closest("[data-go]"); if (b) { show(+b.dataset.go); $(`.jtrack button[data-stage="${b.dataset.go}"]`).focus({ preventScroll: true }); } });
     show(0);
   }
   function goTo(el) {
@@ -3265,7 +3465,7 @@ ${whereNext([["The Model", "#/playbook", "Three components"], ["Lesson 4", "#/le
     });
   }
   function dreamHero(kicker, title, lede, nav) {
-    return `<section class="phero dhero on-navy" style="--bg:url('${IMAGES.voices.src}')"><div class="shoot" aria-hidden="true"><i></i><i></i></div><div class="wrap page-head"><p class="kicker"><span class="nstar">${STAR4}</span>${esc(kicker)}</p>${H(1, title).replace("<h1", '<h1 tabindex="-1"')}
+    return `<section class="phero dhero on-navy" style="--bg:url('${IMAGES.voices.src}')"><div class="shoot" aria-hidden="true"><i></i><i></i></div><div class="wrap page-head sub-head"><p class="kicker"><span class="nstar">${STAR4}</span>${esc(kicker)}</p>${H(1, title).replace("<h1", '<h1 tabindex="-1"')}
 <p class="lede">${esc(lede)}</p>${nav || ""}</div></section>`;
   }
   function pagePathForm(b) {
@@ -3275,7 +3475,7 @@ ${whereNext([["The Model", "#/playbook", "Three components"], ["Lesson 4", "#/le
       html: `${crumbs([["Home", "#/"], ["Dream With Us", "#/dream"], [b.title]])}
 ${dreamHero(b.tag, b.title, b.d.split(/(?<=\.)\s/)[0], `<p class="dh-back no-print"><a class="btn ghost" href="#/dream">\u2190 Back to all paths</a></p>`)}
 <section style="padding-top:28px"><div class="wrap">
-  <div class="bp-grid"><div><h2 class="d">What you get</h2><p>${esc(b.d)}</p>${ul(b.bullets)}${b.id === "conversation" ? (SITE.bookingUrl ? `<p><a class="btn" href="${esc(SITE.bookingUrl)}" target="_blank" rel="noopener" data-track="booking_click">Book a 30-minute call now</a></p>` : (LAUNCH ? "" : `<p class="note">${phx("[Add a scheduling link in SITE.bookingUrl to show a Book a 30-minute call button here.]")}</p>`)) : ""}<p class="note"><b>No commitment required.</b> <a href="#/lessons?section=still-learning">Read what we are still learning</a> before you apply.</p></div><div>${b.slotId ? slot(b.slotId) : realPhoto("team")}</div></div>
+  <div class="bp-grid"><div><h2 class="d">What you get</h2><p>${esc(b.d)}</p>${ul(b.bullets)}${b.id === "conversation" ? (SITE.bookingUrl ? `<p><a class="btn" href="${esc(SITE.bookingUrl)}" target="_blank" rel="noopener" data-track="booking_click">Book a 30-minute call now</a></p>` : (LAUNCH ? "" : `<p class="note">${phx("[Add a scheduling link in SITE.bookingUrl to show a Book a 30-minute call button here.]")}</p>`)) : ""}<p class="note"><b>No commitment required.</b> <a href="#/lessons/still-learning">Read what we are still learning</a> before you apply.</p></div><div>${b.slotId ? slot(b.slotId) : realPhoto("team")}</div></div>
   <form class="bf bf-page" novalidate data-mail="${b.mail}" data-form="${b.id}" aria-labelledby="bf-h"><h2 class="d full" id="bf-h">${esc(b.cta)}</h2>
     ${b.fields.map((f, i) => field(f, b.id, i)).join("")}
     ${SITE.formEndpoint ? "" : `<p class="note full">Submitting opens an email to ${esc(b.mail)} with your answers filled in.${LAUNCH ? "" : " [Connect a form endpoint in SITE.formEndpoint to send without email.]"}</p>`}
@@ -3294,6 +3494,11 @@ ${whereNext([["The design journey", "#/dream/journey", "Eight chapters to openin
   function pageBuild(focus) {
     const pb = BUILD_PATHS.find(b => b.id === focus);
     if (pb) return pagePathForm(pb);
+    if (focus === "journey") return {
+      title: "The Design Journey",
+      html: `${journeyHTML(true)}${whereNext([], true)}`,
+      after() { bindJourney(); }
+    };
     return {
       title: "Dream With Us",
       html: `${crumbs([["Home", "#/"], ["Dream With Us"]])}
@@ -3301,15 +3506,11 @@ ${whereNext([["The design journey", "#/dream/journey", "Eight chapters to openin
   <p class="kicker"><span class="nstar">${STAR4}</span>Follow the North Star</p><h1 class="d" tabindex="-1">Find your star</h1>
   <p class="lede">Every school like this one began as a dream. Pick the path that fits you.</p>
   <div class="grid g3 star-cards">${BUILD_PATHS.map(b => `<a class="star-card" href="#/dream/${b.id}" data-track="star_${b.id}"><span class="nstar">${STAR4}</span><b>${esc(b.title.replace("the HBCU ECP ", "the "))}</b><span class="sc-tag">${esc(b.tag)}</span><span class="btn scarlet sm">${esc(b.cta)}</span></a>`).join("")}</div>
-  <p class="dh-links no-print"><a href="#/dream/journey">See how the journey unfolds</a> \u00B7 <a href="#/brief/funder">Funding the journey</a></p>
+  <p class="dh-journey no-print"><a class="btn gold" href="#/dream/journey"><span class="nstar">${STAR4}</span>See the design journey</a></p>
+  
 </div></section>
-${journeyHTML()}
-<section><div class="wrap"><div class="statement">${H(2, REPLICATION.t)}<p class="lede">${esc(REPLICATION.d)}</p></div></div></section>
 ${whereNext([["Voices of the Village", "#/voices", "Feel what this school is"], ["Lessons Learned", "#/lessons", "What Year 1 taught us"], ["Funder brief", "#/brief/funder", "Funding the journey"]], true)}`,
-      after() {
-        bindJourney();
-        if (focus === "journey") { goTo($("#journey")); return true; }
-      }
+      after() {}
     };
   }
 
@@ -3320,7 +3521,7 @@ ${whereNext([["Voices of the Village", "#/voices", "Feel what this school is"], 
     return {
       title: B.title,
       html: `${crumbs([["Home", "#/"], ["Briefs", "#/brief/" + BRIEFS[0].id], [B.short]])}
-<section class="phero on-navy" style="--bg:url('${IMAGES.team.src}')"><div class="wrap page-head">${back("Home", "#/")}<p class="kicker">One-page brief</p>${H(1, B.title).replace("<h1", '<h1 tabindex="-1"')}<p class="lede">${esc(B.intro)}</p>
+<section class="phero on-navy" style="--bg:url('${IMAGES.team.src}')"><div class="wrap page-head sub-head">${back("Home", "#/")}<p class="kicker">One-page brief</p>${H(1, B.title).replace("<h1", '<h1 tabindex="-1"')}<p class="lede">${esc(B.intro)}</p>
 <nav class="jump no-print" aria-label="Other briefs">${BRIEFS.map(x => `<a href="#/brief/${x.id}" ${x === B ? 'aria-current="page"' : ""}>${esc(x.short)}</a>`).join("")}</nav></div></section>
 <section style="padding-top:16px"><div class="wrap">
   <ol class="brief">${B.qa.map(x => `<li><h2 class="long">${esc(x.q)}</h2><p>${phx(x.a)}</p><p class="blinks no-print">${x.links.map(l => `<a href="${l[1]}">${esc(l[0])}</a>`).join("")}</p></li>`).join("")}</ol>
@@ -3340,7 +3541,7 @@ ${whereNext(others.map(o => [o.short, "#/brief/" + o.id, "Brief"]).concat([["Dre
     return {
       title: "For a " + p.label,
       html: `${crumbs([["Home", "#/"], ["Your path: " + p.label]])}
-<section class="phero on-navy" style="--bg:url('${IMAGES.appdesign.src}')"><div class="wrap page-head">${back("Home", "#/")}<p class="kicker">I am a…</p><h1 class="d" tabindex="-1">${esc(p.label)}</h1><p class="lede">${esc(p.intro)}</p></div></section>
+<section class="phero on-navy" style="--bg:url('${IMAGES.appdesign.src}')"><div class="wrap page-head sub-head">${back("Home", "#/")}<p class="kicker">I am a…</p><h1 class="d" tabindex="-1">${esc(p.label)}</h1><p class="lede">${esc(p.intro)}</p></div></section>
 <section style="padding-top:16px"><div class="wrap"><ol class="grid g2" style="list-style:none;padding:0;margin:0">${p.links.filter(l => !LAUNCH || l.href.startsWith("#")).map((l, i) => `<li><a class="card ${i % 2 ? "t-keppel" : "t-scarlet"}" href="${l.href.startsWith("#") ? l.href : "#/path/" + p.id}"><span class="kicker">Step ${i + 1}</span>${H(3, l.t)}${l.d ? `<p>${phx(l.d)}</p>` : ""}<span class="card-cta">${l.href.startsWith("#") ? "Go" : "Link to come"}</span></a></li>`).join("")}</ol>
 <p style="margin-top:24px">Not you? ${PATHS.filter(x => x !== p).map(x => `<a href="#/path/${x.id}">${esc(x.label)}</a>`).join(" · ")}</p></div></section>
 ${whereNext([["Watch", "#/watch", ""], ["Lessons", "#/lessons", ""], ["Dream With Us", "#/dream", ""]])}`
@@ -3352,7 +3553,7 @@ ${whereNext([["Watch", "#/watch", ""], ["Lessons", "#/lessons", ""], ["Dream Wit
   }
 
   /* ---------- router ---------- */
-  const NAV = [["Voices of the Village", "#/voices", "voices"], ["Playbook", "#/playbook", "playbook"], ["Lessons Learned", "#/lessons", "lessons"], ["Dream With Us", "#/dream", "dream", "Partner with us"]];
+  const NAV = [["Voices of the Village", "#/voices", "voices"], ["Playbook", "#/playbook", "playbook"], ["Lessons Learned", "#/lessons", "lessons"], ["Results", "#/results", "results"], ["Dream With Us", "#/dream", "dream", "Partner with us"]];
   function route() {
     const { parts, q } = parseHash();
     uid = 0; pageFull = new Set();
@@ -3362,13 +3563,16 @@ ${whereNext([["Watch", "#/watch", ""], ["Lessons", "#/lessons", ""], ["Dream Wit
     else if (a === "watch") page = b ? pageVideo(b) : pageWatch(q);
     else if (a === "voices" || a === "work") page = pageVoices(q);
     else if (a === "lessons") page = b ? pageLesson(b) : pageLessons(q);
-    else if (a === "playbook") page = !b ? pagePlaybook() : b === "tools" ? pageTools() : c ? pageArea(b, c) : pageComponent(b);
+    else if (a === "playbook") page = !b ? pagePlaybook() : b === "tools" ? pageTools() : b === "cycle" ? pageCycle() : c ? pageArea(b, c) : pageComponent(b);
     else if (a === "build" || a === "dream") page = pageBuild(b);
     else if (a === "path") page = pagePath(b);
+    else if (a === "results") page = pageResults();
     else if (a === "brief") page = pageBrief(b);
     else page = pageNotFound();
     const main = $("#main");
-    main.innerHTML = page.html;
+    main.innerHTML = subnavHTML(a) + page.html;
+    main.className = (b && ["playbook", "lessons", "watch", "dream", "build"].includes(a) && !(a === "playbook" && ["tools", "cycle"].includes(b))) || ["brief", "path"].includes(a) ? "subpage" : "";
+    refreshSubnav();
     document.title = page.title + " | HBCU Early College Prep";
     track("page_view", { route: location.hash || "#/" });
     if (a === "brief") track("brief_view", { brief: b });
@@ -3397,7 +3601,7 @@ ${whereNext([["Watch", "#/watch", ""], ["Lessons", "#/lessons", ""], ["Dream Wit
         <div><a class="brand" href="#/" style="color:#fff">${seal(56)}<span class="wm" style="color:#fff">HBCU Early<br>College Prep</span></a><p style="margin-top:12px;color:var(--sky)">Southeast Queens, NY · Be the Dream.</p></div>
         <div><h3>Voices of the Village</h3><ul>${VILLAGE.map(g => `<li><a href="#/voices?seat=${g.id}">${esc(g.short)}</a></li>`).join("")}<li><a href="#/watch">All videos</a></li></ul></div>
         <div><h3>Playbook</h3><ul><li><a href="#/playbook">The Model</a></li>${comps.map(c => `<li><a href="#/playbook/${c.id}">${esc(c.title)}</a></li>`).join("")}<li><a href="#/playbook/tools">Tools</a></li></ul></div>
-        <div><h3>Lessons Learned</h3><ul>${THEMES.map(t => `<li><a href="#/lessons?theme=${encodeURIComponent(t)}">${esc(t)}</a></li>`).join("")}<li><a href="#/lessons?section=still-learning">What we are still learning</a></li></ul></div>
+        <div><h3>Lessons Learned</h3><ul>${THEMES.map(t => `<li><a href="#/lessons?theme=${encodeURIComponent(t)}">${esc(t)}</a></li>`).join("")}<li><a href="#/lessons/still-learning">What we are still learning</a></li></ul></div>
         <div><h3>Dream With Us</h3><ul><li><a href="#/dream/journey">The design journey</a></li>${BUILD_PATHS.map(b => `<li><a href="#/dream/${b.id}">${esc(b.title.replace("the HBCU ECP ", "the "))}</a></li>`).join("")}${BRIEFS.map(x => `<li><a href="#/brief/${x.id}">Brief: ${esc(x.short)}</a></li>`).join("")}</ul></div>
       </div>
       <h3 class="sr">Partners</h3>
