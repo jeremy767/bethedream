@@ -2818,39 +2818,13 @@ form.bf-page h2{margin:0}
   <div class="ctas"><a class="btn scarlet" href="#/dream" data-track="hero_partner">Bring this to your community</a><a class="btn ghost" href="#/voices" data-track="hero_voices">Hear the village</a><a class="hero-link" href="#/playbook">Explore the Playbook</a></div></div>
   <div class="vwrap">${slot("home-hero", { autoplay: true })}</div>
 </div></section>
-<section class="skyb" aria-labelledby="q-h"><div class="wrap">
-  <h2 id="q-h" class="d">In their words</h2>
-  <div class="carousel" aria-roledescription="carousel" aria-label="Pull quotes">
-    <div class="slides" aria-live="polite">${quotes}</div>
-    <div class="cbar no-print"><div class="dots">${QUOTES.map((q, i) => `<button type="button" aria-label="Show quote ${i + 1}: ${esc(q.who)}" aria-current="${i === 0}" data-go="${i}">${i + 1}</button>`).join("")}</div>
-      <div class="arrows"><button class="btn sm ghost" type="button" data-step="-1">Previous</button><button class="btn sm" type="button" data-step="1">Next</button></div></div>
-  </div>
-</div></section>
-${band()}
-<section class="results-merged" id="results" tabindex="-1" aria-labelledby="res-h" style="padding-top:24px"><div class="wrap">
-  <div class="res-headrow"><div><p class="kicker">Inaugural year, 2025 to 2026</p><h2 id="res-h" class="d">Year 1 results</h2></div><a class="btn" href="#/results">See all results and data</a></div>
-  <div class="proof">
-    <div><b>100%</b><span>pass rate across early college courses</span></div>
-    <div><b>${RESULTS.credits.pct}%</b><span>of scholars earned ${RESULTS.credits.credits} college credits through DSU</span></div>
-    <div><b>${RESULTS.regents.map(r => r.rate + "%").join(" \u00B7 ")}</b><span>Regents pass rates: ${RESULTS.regents.map(r => esc(r.exam)).join(" and ")}</span></div>
-    <div><b>1,000+</b><span>applications for 100 seats</span></div>
-  </div>
-</div></section>
-<div class="wrap" style="padding-top:28px"><p class="kicker">Built in partnership with</p><div class="partners home-partners">${PARTNERS.map(p => `<a href="${p.href}" target="_blank" rel="noopener" aria-label="${esc(p.n)} (opens in a new tab)">${p.svg}</a>`).join("")}</div></div>
-${partnerQuotes()}
-<section class="wash" aria-labelledby="iam-h"><div class="wrap">
-  <h2 id="iam-h" class="d">I am a\u2026</h2>
-  <p class="sub">Choose your seat. We will point you to what matters most.</p>
-  <nav class="iam" aria-label="Choose a path by role">${PATHS.map(p => `<a href="#/path/${p.id}"><b>${esc(p.label)}</b><span>Start here</span></a>`).join("")}</nav>
-  <p style="margin-top:20px"><strong>Short on time?</strong> Read a one-page brief: ${BRIEFS.map(b => `<a href="#/brief/${b.id}">${esc(b.short)}</a>`).join(" \u00B7 ")}</p>
-</div></section>
 ${invite()}`,
       after() {
         let i = 0;
         const slides = $$(".slide"), dots = $$("[data-go]");
         const show = n => { i = (n + slides.length) % slides.length; slides.forEach((s, k) => s.classList.toggle("on", k === i)); dots.forEach((d, k) => d.setAttribute("aria-current", k === i)); };
         if (q && q.section && $("#" + q.section)) { const el = $("#" + q.section); el.scrollIntoView(); el.focus({ preventScroll: true }); var jumped = true; }
-        $(".carousel").addEventListener("click", e => {
+        if ($(".carousel")) $(".carousel").addEventListener("click", e => {
           const g = e.target.closest("[data-go]"), s = e.target.closest("[data-step]");
           if (g) show(+g.dataset.go); if (s) show(i + +s.dataset.step);
         });
